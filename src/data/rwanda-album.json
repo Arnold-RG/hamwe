@@ -1,0 +1,165 @@
+{
+  "count": 16,
+  "photos": [
+    {
+      "id": "amahoro-night",
+      "src": "/images/album/amahoro-night.jpg",
+      "full": "/images/album/amahoro-night.jpg",
+      "title": "Amahoro Stadium",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "stadiums",
+      "topicLabel": "Stadiums"
+    },
+    {
+      "id": "amahoro-day",
+      "src": "/images/album/amahoro-day.jpg",
+      "full": "/images/album/amahoro-day.jpg",
+      "title": "Remera",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "cities",
+      "topicLabel": "Cities"
+    },
+    {
+      "id": "thousand-hills",
+      "src": "/images/album/thousand-hills.jpg",
+      "full": "/images/album/thousand-hills.jpg",
+      "title": "Thousand hills",
+      "place": "Rwanda",
+      "caption": "Rwanda",
+      "topic": "hills",
+      "topicLabel": "Hills"
+    },
+    {
+      "id": "tea-hills",
+      "src": "/images/album/tea-hills.jpg",
+      "full": "/images/album/tea-hills.jpg",
+      "title": "Tea hills",
+      "place": "Western Province",
+      "caption": "Western Province",
+      "topic": "hills",
+      "topicLabel": "Hills"
+    },
+    {
+      "id": "kigali",
+      "src": "/images/album/kigali.jpg",
+      "full": "/images/album/kigali.jpg",
+      "title": "Kigali",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "kigali",
+      "topicLabel": "Kigali"
+    },
+    {
+      "id": "kigali-campus",
+      "src": "/images/album/kigali-campus.jpg",
+      "full": "/images/album/kigali-campus.jpg",
+      "title": "Kigali campus",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "cities",
+      "topicLabel": "Cities"
+    },
+    {
+      "id": "intore",
+      "src": "/images/album/intore.jpg",
+      "full": "/images/album/intore.jpg",
+      "title": "Intore",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "dance",
+      "topicLabel": "Traditional dance"
+    },
+    {
+      "id": "car-free-track",
+      "src": "/images/album/car-free-track.jpg",
+      "full": "/images/album/car-free-track.jpg",
+      "title": "Car-free track",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "transport",
+      "topicLabel": "Transport"
+    },
+    {
+      "id": "gorillas",
+      "src": "/images/album/gorillas.jpg",
+      "full": "/images/album/gorillas.jpg",
+      "title": "Mountain gorillas",
+      "place": "Volcanoes National Park",
+      "caption": "Volcanoes National Park",
+      "topic": "wildlife",
+      "topicLabel": "Wildlife"
+    },
+    {
+      "id": "gorilla",
+      "src": "/images/album/gorilla.jpg",
+      "full": "/images/album/gorilla.jpg",
+      "title": "Mountain gorilla",
+      "place": "Volcanoes National Park",
+      "caption": "Volcanoes National Park",
+      "topic": "wildlife",
+      "topicLabel": "Wildlife"
+    },
+    {
+      "id": "gasabo",
+      "src": "/images/album/gasabo.jpg",
+      "full": "/images/album/gasabo.jpg",
+      "title": "Gasabo",
+      "place": "Kigali",
+      "caption": "Kigali",
+      "topic": "cities",
+      "topicLabel": "Cities"
+    },
+    {
+      "id": "coach",
+      "src": "/images/album/coach.jpg",
+      "full": "/images/album/coach.jpg",
+      "title": "Coach",
+      "place": "Rwanda",
+      "caption": "Rwanda",
+      "topic": "transport",
+      "topicLabel": "Transport"
+    },
+    {
+      "id": "paul-kagame",
+      "src": "/images/album/paul-kagame.jpg",
+      "full": "/images/album/paul-kagame.jpg",
+      "title": "Paul Kagame",
+      "place": "Republic of Rwanda",
+      "caption": "Republic of Rwanda",
+      "topic": "president",
+      "topicLabel": "President"
+    },
+    {
+      "id": "rdf",
+      "src": "/images/album/rdf.jpg",
+      "full": "/images/album/rdf.jpg",
+      "title": "Rwanda Defence Force",
+      "place": "RDF",
+      "caption": "RDF",
+      "topic": "soldiers",
+      "topicLabel": "Soldiers"
+    },
+    {
+      "id": "visit-rwanda",
+      "src": "/images/album/visit-rwanda.jpg",
+      "full": "/images/album/visit-rwanda.jpg",
+      "title": "Visit Rwanda",
+      "place": "Stadium night",
+      "caption": "Stadium night",
+      "topic": "stadiums",
+      "topicLabel": "Stadiums"
+    },
+    {
+      "id": "rwandair",
+      "src": "/images/album/rwandair.jpg",
+      "full": "/images/album/rwandair.jpg",
+      "title": "RwandAir",
+      "place": "RwandAir",
+      "caption": "RwandAir",
+      "topic": "aviation",
+      "topicLabel": "RwandAir"
+    }
+  ]
+}

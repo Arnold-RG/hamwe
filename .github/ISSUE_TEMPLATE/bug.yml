@@ -1,0 +1,31 @@
+name: Defect
+description: Something in the product is wrong or dishonest.
+title: "[defect] "
+labels: ["defect"]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Home / desk clock
+        - Tours or activities
+        - Plan / included / care
+        - Gisubizo
+        - Checkout or tickets
+        - Docs / repository only
+    validations:
+      required: true
+  - type: textarea
+    id: seen
+    attributes:
+      label: What you saw
+      placeholder: Route, CAT time if the desk is involved, and the exact copy.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+    validations:
+      required: true

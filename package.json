@@ -1,0 +1,25 @@
+{
+  "name": "visit-rwanda",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node scripts/spa-fallback.mjs && node scripts/check-published.mjs",
+    "check:published": "node scripts/check-published.mjs",
+    "preview": "vite preview",
+    "test": "node --test scripts/check-published.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}

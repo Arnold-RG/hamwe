@@ -1,0 +1,29 @@
+name: Proposal
+description: A change that would make the house clearer.
+title: "[proposal] "
+labels: ["proposal"]
+body:
+  - type: textarea
+    id: guest
+    attributes:
+      label: Who is the guest
+      placeholder: Solo adult landing at KGL, a pair booking gorillas, a reviewer of this repo…
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: The change
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Still true after this
+      options:
+        - label: No unit fare outside FRw 8,000–80,000
+          required: true
+        - label: No fake names or occupancy
+          required: true
+        - label: Demo payments stay labelled as demo
+          required: true

@@ -1,0 +1,187 @@
+/* Shared responsive + motion baseline (Jitter/Unsection/ScreensDesign inspired) */
+:root {
+  --arn-space-1: clamp(0.25rem, 0.4vw, 0.4rem);
+  --arn-space-2: clamp(0.5rem, 1vw, 0.75rem);
+  --arn-space-3: clamp(0.85rem, 1.6vw, 1.25rem);
+  --arn-space-4: clamp(1.25rem, 2.5vw, 2rem);
+  --arn-space-5: clamp(2rem, 4vw, 3.5rem);
+  --arn-space-6: clamp(3rem, 7vw, 6rem);
+  --arn-radius: clamp(12px, 1.5vw, 20px);
+  --arn-touch: 44px;
+  --arn-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --arn-max: 1120px;
+  --arn-safe-t: env(safe-area-inset-top, 0px);
+  --arn-safe-r: env(safe-area-inset-right, 0px);
+  --arn-safe-b: env(safe-area-inset-bottom, 0px);
+  --arn-safe-l: env(safe-area-inset-left, 0px);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  padding-left: var(--arn-safe-l);
+  padding-right: var(--arn-safe-r);
+}
+
+img, video, svg, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, a, input, select, textarea {
+  min-height: var(--arn-touch);
+  font: inherit;
+}
+
+.arn-skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  z-index: 10000;
+}
+.arn-skip:focus { left: var(--arn-safe-l); top: var(--arn-safe-t); }
+
+.arn-wrap {
+  width: min(100% - 2 * var(--arn-space-3), var(--arn-max));
+  margin-inline: auto;
+}
+
+.arn-hero {
+  min-height: 100dvh;
+  min-height: 100svh;
+  display: grid;
+  align-content: end;
+  padding:
+    calc(var(--arn-space-6) + var(--arn-safe-t))
+    var(--arn-space-3)
+    calc(var(--arn-space-5) + var(--arn-safe-b));
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.arn-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(120% 80% at 80% 10%, color-mix(in srgb, var(--arn-accent, #3d9a68) 35%, transparent), transparent 55%),
+    radial-gradient(90% 70% at 10% 90%, color-mix(in srgb, var(--arn-accent-2, #c9a227) 22%, transparent), transparent 50%),
+    var(--arn-hero-bg, #071018);
+}
+
+.arn-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.35;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+.arn-brand {
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 var(--arn-space-2);
+}
+
+.arn-h1 {
+  font-size: clamp(2rem, 6.5vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 var(--arn-space-3);
+  max-width: 16ch;
+}
+
+.arn-lead {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.55;
+  max-width: 38ch;
+  margin: 0 0 var(--arn-space-4);
+  opacity: 0.88;
+}
+
+.arn-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--arn-space-2);
+}
+
+.arn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--arn-touch);
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 650;
+  cursor: pointer;
+  transition: transform 0.25s var(--arn-ease), background 0.25s var(--arn-ease), border-color 0.25s var(--arn-ease);
+}
+.arn-btn:active { transform: scale(0.98); }
+.arn-btn-primary {
+  background: var(--arn-accent, #3d9a68);
+  color: #fff;
+}
+.arn-btn-ghost {
+  background: color-mix(in srgb, #fff 8%, transparent);
+  border-color: color-mix(in srgb, #fff 22%, transparent);
+  color: inherit;
+}
+
+.arn-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s var(--arn-ease), transform 0.7s var(--arn-ease);
+}
+.arn-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.arn-stagger > .arn-reveal:nth-child(1) { transition-delay: 0.05s; }
+.arn-stagger > .arn-reveal:nth-child(2) { transition-delay: 0.12s; }
+.arn-stagger > .arn-reveal:nth-child(3) { transition-delay: 0.19s; }
+.arn-stagger > .arn-reveal:nth-child(4) { transition-delay: 0.26s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .arn-reveal { opacity: 1; transform: none; transition: none; }
+  .arn-btn { transition: none; }
+}
+
+@media (max-width: 480px) {
+  .arn-cta { width: 100%; }
+  .arn-cta .arn-btn { flex: 1 1 auto; }
+}
+
+@media (min-width: 1280px) {
+  .arn-wrap { --arn-max: 1200px; }
+}
+
+@media (min-width: 1600px) {
+  .arn-wrap { --arn-max: 1320px; }
+}
