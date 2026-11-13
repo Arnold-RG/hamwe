@@ -11,7 +11,7 @@
     "test": "node --test scripts/check-published.test.mjs"
   },
   "dependencies": {
-    "react": "^19.1.1",
+    "react": "^19.3.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.2"
   },
