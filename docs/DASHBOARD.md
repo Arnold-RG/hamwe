@@ -121,7 +121,7 @@ flowchart LR
 ```
 
 - Typecheck is part of `npm run build`, not optional.
-- The Pages workflow deploys **only** `dist/`. README, `docs/`, and `.github/` stay on GitHub for reviewers.
+- The Pages workflow deploys **only** `dist/`. `docs/` and `.github/` stay on GitHub for reviewers.
 - No live secrets. No merchant keys. Checkout is labelled as a demo in the footer.
 
 ---
