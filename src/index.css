@@ -2,27 +2,27 @@
 
 :root {
   /* Hamwe brand — volcanic charcoal · lake blue · soft gold (distinct from hub folio) */
-  --arn-accent: #c9a86a;
-  --arn-accent-2: #3d8ea8;
-  --arn-hero-bg: #0a1210;
-  --void: #0a1210;
-  --soil: #101a17;
-  --moss: #163028;
-  --mist: #d8e4df;
-  --paper: #eef4f1;
-  --gold: #c9a86a;
-  --ember: #c45c26;
-  --cyan: #3d8ea8;
-  --lake: #2f6f86;
+  --arn-accent: #F0BD74;
+  --arn-accent-2: #72C5DC;
+  --arn-hero-bg: #111D34;
+  --void: #101C32;
+  --soil: #17283E;
+  --moss: #213D62;
+  --mist: #E0EFF7;
+  --paper: #F0F7FC;
+  --gold: #F0BD74;
+  --ember: #E77B59;
+  --cyan: #72C5DC;
+  --lake: #337EAE;
   --status-open: #3dbf7a;
   --status-lunch: #e0b84a;
   --status-closed: #e23d3d;
   --oxblood: #8b2e2a;
   --glass: rgba(10, 22, 28, 0.58);
-  --ink: #eef4f1;
-  --muted: #9fb4ad;
-  --line: rgba(201, 168, 106, 0.36);
-  --hair: rgba(238, 244, 241, 0.12);
+  --ink: #F0F7FC;
+  --muted: #B4CBE1;
+  --line: rgba(240, 189, 116, 0.34);
+  --hair: rgba(240, 247, 252, 0.15);
   --shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
   --display: "Fraunces", "Palatino Linotype", Palatino, serif;
   --body: Sora, ui-sans-serif, sans-serif;
@@ -3751,3 +3751,29 @@ textarea {
     transform: none !important;
   }
 }
+
+/* Hamwe 2026: independent Rwanda-travel identity inspired by sky, water and sunrise.
+   Navy / lake blue / coral / sand contrasts with retail and ArnovaGroup brands.
+   All booking routes, dates, checkout and existing motion remain unchanged. */
+:root{--hamwe-sky:#337EAE;--hamwe-coral:#E77B59;--hamwe-sand:#F0BD74;--hamwe-night:#101C32;--hamwe-ice:#F0F7FC}
+body{background:var(--hamwe-night);color:var(--hamwe-ice)}
+.intro-splash{background:#101C32}
+.intro-glow{background:radial-gradient(circle,rgba(114,197,220,.22),transparent 65%)}
+.intro-logo{filter:drop-shadow(0 0 25px rgba(114,197,220,.28))}
+.scroll-progress > span{background:linear-gradient(90deg,var(--hamwe-coral),var(--hamwe-sky),var(--hamwe-sand))}
+.hero-bg img{filter:saturate(1.05) contrast(1.06) brightness(.94)}
+.hero-vignette{background:linear-gradient(90deg,rgba(12,25,47,.90) 0%,rgba(12,25,47,.46) 52%,rgba(12,25,47,.14) 100%),linear-gradient(180deg,rgba(12,25,47,.24),transparent 30%,rgba(12,25,47,.83))}
+.hero-filaments{background:radial-gradient(ellipse at 68% 42%,rgba(240,189,116,.15),transparent 58%),radial-gradient(ellipse at 18% 70%,rgba(114,197,220,.20),transparent 52%)}
+.nav{background:linear-gradient(180deg,rgba(16,28,50,.36),transparent)}
+.nav-solid,.nav-open{background:rgba(16,28,50,.93)}
+.nav-link:hover,.nav-link.active,.text-link:hover{color:var(--hamwe-sand)}
+.nav-cta,.btn-primary{background:var(--hamwe-sand);color:#101C32}
+.btn-primary:hover{background:#F7D29F;color:#101C32}
+.btn-ghost{background:rgba(16,28,50,.38)}
+.text-link{color:#83D1E7;border-bottom-color:rgba(131,209,231,.45)}
+.page-hero{background:linear-gradient(130deg,rgba(16,28,50,.90),rgba(51,126,174,.20))}
+.office-clock-inner{background:linear-gradient(180deg,rgba(16,28,50,.86),rgba(16,28,50,.66))}
+.site-footer{background:rgba(16,28,50,.90)}
+.footer-grid a:hover{color:#83D1E7}
+:focus-visible{outline-color:var(--hamwe-sand)}
+@media(prefers-reduced-motion:reduce){.intro-glow,.hero-filaments{animation:none}}
