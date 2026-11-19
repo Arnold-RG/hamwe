@@ -65,13 +65,6 @@ Use secrets management, least privilege, deployment environment isolation, depen
 
 These are **release criteria**, not claims that every control is currently enabled. Kubernetes should only be used when the actual runtime complexity justifies it.
 
-## Roadmap
-
-1. Check content provenance and real booking service integrations.
-2. Test routes, checkout/booking state, error boundaries and mobile behavior.
-3. Extend CI with security, dependency scanning and accessibility checks.
-4. Document release, monitoring and rollback for verified production paths.
-
 ## Contributing and support
 
 Create a small, reviewable change, include reproduction steps and tests, and document environmental impacts. Do not publish unapproved customer details or change live services without release authorization. Report security vulnerabilities privately via `SECURITY.md` where available.
