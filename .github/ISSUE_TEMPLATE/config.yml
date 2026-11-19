@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live product
+    url: https://arnold-rg.github.io/hamwe/
+    about: Open the Hamwe Tourism site.
+  - name: Engineering dashboard
+    url: https://github.com/Arnold-RG/hamwe/blob/main/docs/DASHBOARD.md
+    about: Charts and ship status for reviewers.

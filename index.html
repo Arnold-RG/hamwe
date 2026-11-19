@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a1210" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; base-uri 'self'; form-action 'self'; object-src 'none'"
+    />
+    <meta
+      name="description"
+      content="Hamwe Tourism plans full Rwanda tours for small groups of strangers. Buy a ticket, meet the table, walk the thousand hills together."
+    />
+    <link rel="canonical" href="https://arnold-rg.github.io/hamwe/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hamwe Tourism" />
+    <meta property="og:title" content="Hamwe Tourism" />
+    <meta property="og:description" content="Hosted Rwanda tours from Kigali. Hamwe Tourism." />
+    <meta property="og:url" content="https://arnold-rg.github.io/hamwe/" />
+    <meta property="og:image" content="https://arnold-rg.github.io/hamwe/images/hero-hills.jpg" />
+    <meta property="og:locale" content="en_RW" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hamwe Tourism" />
+    <meta name="twitter:description" content="Hosted Rwanda tours from Kigali. Hamwe Tourism." />
+    <meta name="twitter:image" content="https://arnold-rg.github.io/hamwe/images/hero-hills.jpg" />
+    <script>
+      document.documentElement.classList.add('js')
+      try {
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        if (reduceMotion) document.documentElement.setAttribute('data-reduced-motion', '')
+        if (reduceMotion || sessionStorage.getItem('hamwe-intro') === 'seen') {
+          document.documentElement.classList.add('skip-intro')
+        }
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hamwe Tourism</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Hamwe Tourism",
+        "url": "https://arnold-rg.github.io/hamwe/",
+        "image": "https://arnold-rg.github.io/hamwe/images/hero-hills.jpg",
+        "email": "circle@hamwe.rw",
+        "telephone": "+250794607518",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ikaze House, KG 11 Ave",
+          "addressLocality": "Kigali",
+          "addressCountry": "RW"
+        }
+      }
+    </script>
+    <style>
+      html.skip-intro #boot-intro {
+        display: none !important;
+      }
+      #boot-intro {
+        position: fixed;
+        inset: 0;
+        z-index: 400;
+        background: #0a1210;
+        display: grid;
+        place-items: center;
+      }
+      #boot-intro img {
+        width: min(78vw, 420px);
+        height: auto;
+        animation: boot-logo 1.8s ease-in-out infinite;
+      }
+      @keyframes boot-logo {
+        0%, 100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 24px rgba(196, 164, 106, 0.35)); }
+        50% { transform: scale(1.04); opacity: 0.88; filter: drop-shadow(0 0 40px rgba(61, 142, 168, 0.45)); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #boot-intro img { animation: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(location.search)
+          var path = params.get('p')
+          if (!path || path.charAt(0) !== '/') return
+          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1)
+          history.replaceState(null, '', '/hamwe' + path + location.hash)
+        } catch (e) {}
+      })()
+    </script>
+    <div id="boot-intro" aria-hidden="true">
+      <img src="%BASE_URL%brand/hamwe-logo-lockup.png?v=tourism" alt="Hamwe Tourism" />
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
