@@ -3753,7 +3753,7 @@ textarea {
 }
 
 /* Hamwe 2026: independent Rwanda-travel identity inspired by sky, water and sunrise.
-   Navy / lake blue / coral / sand contrasts with retail and ArnovaGroup brands.
+   Navy / lake blue / coral / sand contrasts with other website palettes.
    All booking routes, dates, checkout and existing motion remain unchanged. */
 :root{--hamwe-sky:#337EAE;--hamwe-coral:#E77B59;--hamwe-sand:#F0BD74;--hamwe-night:#101C32;--hamwe-ice:#F0F7FC}
 body{background:var(--hamwe-night);color:var(--hamwe-ice)}
